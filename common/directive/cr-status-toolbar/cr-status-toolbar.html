@@ -1,0 +1,31 @@
+<div class="cr-status-toolbar" layout="row" layout-align="space-between center">
+    <img src="/img/icons/logo-crate.png">
+    <div layout="row" layout-align="end center">
+        <div class="cr-status-toolbar-item"> Cluster:</div>
+        <div class="cr-status-toolbar-item"> Version:</div>
+        <div class="cr-status-toolbar-item"> Health: </div>
+        <div class="cr-status-toolbar-item"> Load: </div>
+
+        <div> </div>
+
+            <md-menu>
+              <md-button aria-label="Open settings interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                <md-icon md-menu-origin md-svg-src="/img/icons/settings_icon.svg"></md-icon>
+              </md-button>
+              <md-menu-content width="4">
+                <md-menu-item>
+                TEST
+                </md-menu-item>
+                <md-menu-item>
+
+                </md-menu-item>
+                <md-menu-divider></md-menu-divider>
+                <md-menu-item>
+                  <md-button ng-click="ctrl.toggleNotifications()">
+                  notifications
+                  </md-button>
+                </md-menu-item>
+              </md-menu-content>
+            </md-menu>
+        </div>
+</div>

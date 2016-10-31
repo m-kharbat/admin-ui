@@ -1,0 +1,30 @@
+.cr-navigation-bar{
+    position: fixed;
+    z-index: 30;
+    width: 80px;
+    height: 100%;
+    padding-top: 40px;
+    border-right: 1px solid #2e2e2e;
+    background-color: #444;
+    display: block;
+}
+
+.cr-navigation-bar-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.cr-navigation-bar-item > img {
+    opacity: 0.4;
+
+}
+.cr-navigation-bar-item_active > img{
+    opacity: 1;
+}

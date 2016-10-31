@@ -1,0 +1,5 @@
+<div class="cr-navigation-bar">
+        <div class="cr-navigation-bar-item" ng-repeat="navBarElement in crNavigationBarCtrl.navBarElements" ui-sref="{{navBarElement.state}}" ui-sref-active="cr-navigation-bar-item_active" data-popover-trigger="mouseenter" popover="{{navBarElement.iconSrc}}" popover-placement="right" >
+            <img ng-src="{{navBarElement.iconSrc}}"></svg>
+        </div>
+</div>
