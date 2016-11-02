@@ -24,9 +24,9 @@ angular.module('common').factory('crNavigationService',function() {
         } else if (index < 0 || index >= navBarElements.length){
             navBarElements.push(pluginElement);
         } else {
-            navBarElements.push(index, 0, pluginElement);
+            navBarElements.splice(index, 0, pluginElement);
         }
-    };
+    }
 
     function updateNavBarElement(state, text){
         var filteredNavElements = navBarElements.filter(function(item){
@@ -38,7 +38,6 @@ angular.module('common').factory('crNavigationService',function() {
         }
 
         filteredNavElements[0].text = text;
-
-    };
+    }
 
 });
